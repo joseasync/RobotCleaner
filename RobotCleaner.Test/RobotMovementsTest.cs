@@ -17,7 +17,7 @@ namespace RobotCleaner.Test
             {
                 Tuple.Create("E",2)
             };         
-            _myRobotCleaner = new RobotIA(2, 24, 12, movements);
+            _myRobotCleaner = new RobotIA(1, 24, 12, movements);
             _myRobotCleaner.Start();
 
             Assert.True(_myRobotCleaner.GetOrientation() == "E");
