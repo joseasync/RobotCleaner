@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace RobotCleaner.Test
+namespace RobotCleaner
 {
-    internal class Robot
+    public class Robot
     {
         public string HeadDirection { get; set; }
         public int XCoordinate { get; set; }

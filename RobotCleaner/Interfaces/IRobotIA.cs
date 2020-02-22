@@ -1,6 +1,6 @@
-﻿namespace RobotCleaner.Test
+﻿namespace RobotCleaner
 {
-    internal interface IRobotIA
+    public interface IRobotIA
     {
         void Start();
         string GetOrientation();

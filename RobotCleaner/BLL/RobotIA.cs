@@ -1,27 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace RobotCleaner.Test
+namespace RobotCleaner
 {
-    internal class RobotIA : IRobotIA
+    public class RobotIA : IRobotIA
     {
         private Robot _robot;
 
+        private readonly int numberofcommands;       
+        private readonly List<Tuple<string, int>> movements;
 
-        private int numberofcommands;
-        private int v2;
-        private int v3;
-        private List<Tuple<string, int>> movements;
-
-        public RobotIA(int numberofcommands, int v2, int v3, List<Tuple<string, int>> movements)
+        public RobotIA(int numberofcommands, int coordinatex, int coordinatey, List<Tuple<string, int>> movements)
         {
             this.numberofcommands = numberofcommands;
             this.movements = movements;
+
             _robot = new Robot
             {
-                XCoordinate = v2,
-                YCoordinate = v3,
-                SpotsCleaned = new HashSet<string> { v2 + "_" + v3 }
+                XCoordinate = coordinatex,
+                YCoordinate = coordinatey,
+                SpotsCleaned = new HashSet<string> { coordinatex + "_" + coordinatey }
             };
         }
 
