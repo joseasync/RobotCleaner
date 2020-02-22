@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotCleaner", "RobotCleaner\RobotCleaner.csproj", "{514E6568-FA19-45A6-815C-88A862CBE4C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{514E6568-FA19-45A6-815C-88A862CBE4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{514E6568-FA19-45A6-815C-88A862CBE4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{514E6568-FA19-45A6-815C-88A862CBE4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{514E6568-FA19-45A6-815C-88A862CBE4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67E86F41-2F67-411D-BBC8-1129A2B10252}
+	EndGlobalSection
+EndGlobal
