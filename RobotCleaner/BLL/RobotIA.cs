@@ -84,6 +84,9 @@ namespace RobotCleaner
             return true;
         }
 
-
+        public int GetCleanedSpotsQuantity()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

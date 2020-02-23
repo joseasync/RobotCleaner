@@ -1,4 +1,6 @@
-﻿namespace RobotCleaner
+﻿using System.Collections.Generic;
+
+namespace RobotCleaner
 {
     public interface IRobotIA
     {
@@ -6,5 +8,6 @@
         string GetOrientation();
         int GetPositionX();
         int GetPositionY();
+        int GetCleanedSpotsQuantity();
     }
 }
