@@ -28,6 +28,8 @@ namespace RobotCleaner
         public int GetPositionX() => _robot.XCoordinate;
 
         public int GetPositionY() => _robot.YCoordinate;
+        public int GetCleanedSpotsQuantity() => _robot.SpotsCleaned.Count;
+
 
         public void Start()
         {
@@ -46,6 +48,7 @@ namespace RobotCleaner
             }
         }
 
+        //If the User request one position out of the index, the robot goes to the next Movement.
         private bool MoveForward()
         {
             switch (_robot.HeadDirection)
@@ -81,12 +84,8 @@ namespace RobotCleaner
                 default:
                     throw new NotSupportedException("Invalid Coordinate");
             }
+            _robot.SpotsCleaned.Add(_robot.XCoordinate + "_" + _robot.YCoordinate);
             return true;
-        }
-
-        public int GetCleanedSpotsQuantity()
-        {
-            throw new NotImplementedException();
         }
     }
 }

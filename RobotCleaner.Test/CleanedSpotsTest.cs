@@ -46,7 +46,7 @@ namespace RobotCleaner.Test
             {
                 new object[] { movements1.Count, 10,22,movements1, 4 },
                 new object[] { movements2.Count, 50,31,movements2, 3 },
-                new object[] { movements3.Count, 100,654,movements3, 0 }                
+                new object[] { movements3.Count, 100,654,movements3, 1 }                
             };
 
             return allTests.Take(testNumber);
