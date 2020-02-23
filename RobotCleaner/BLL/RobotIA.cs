@@ -85,5 +85,7 @@ namespace RobotCleaner
             return true;
         }
 
+
+        public override string ToString() => $"=> Cleaned: {GetCleanedSpotsQuantity()}";
     }
 }
