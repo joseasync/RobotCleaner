@@ -24,13 +24,10 @@ namespace RobotCleaner
         }
 
         public string GetOrientation() => _robot.HeadDirection;
-
         public int GetPositionX() => _robot.XCoordinate;
-
         public int GetPositionY() => _robot.YCoordinate;
         public int GetCleanedSpotsQuantity() => _robot.SpotsCleaned.Count;
-
-
+        
         public void Start()
         {
             if (numberofcommands == 0) { return; }
@@ -87,5 +84,6 @@ namespace RobotCleaner
             _robot.SpotsCleaned.Add(_robot.XCoordinate + "," + _robot.YCoordinate);
             return true;
         }
+
     }
 }

@@ -68,5 +68,21 @@ namespace RobotCleaner.Test
 
             Assert.Equal(1, _myRobotCleaner.GetCleanedSpotsQuantity());
         }
+
+        [Fact]
+        public void ShouldReturnExerciseText()
+        {
+            var movements = new List<Tuple<string, int>>()
+            {
+                Tuple.Create("E",2),
+                Tuple.Create("N",1)
+            };
+
+            _myRobotCleaner = new RobotIA(movements.Count, 10, 22, movements);
+            _myRobotCleaner.Start();
+
+            Assert.Equal("=> Cleaned: 4", _myRobotCleaner.ToString());
+        }
+
     }
 }
