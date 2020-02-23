@@ -36,8 +36,7 @@ namespace RobotCleaner.Test
             _myRobotCleaner = new RobotIA(movements.Count, 24, 12, movements);
             _myRobotCleaner.Start();
 
-            Assert.True(_myRobotCleaner.GetOrientation() == "E");
-            Assert.True(_myRobotCleaner.GetPositionX() == 26);
+            Assert.True(_myRobotCleaner.GetPositionX() == 24);
             Assert.True(_myRobotCleaner.GetPositionY() == 12);
 
         }

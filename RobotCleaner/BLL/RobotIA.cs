@@ -7,7 +7,7 @@ namespace RobotCleaner
     {
         private Robot _robot;
 
-        private readonly int numberofcommands;       
+        private readonly int numberofcommands;
         private readonly List<Tuple<string, int>> movements;
 
         public RobotIA(int numberofcommands, int coordinatex, int coordinatey, List<Tuple<string, int>> movements)
@@ -31,6 +31,8 @@ namespace RobotCleaner
 
         public void Start()
         {
+            if (numberofcommands == 0) { return; }
+
             for (int i = 0; i < numberofcommands; i++)
             {
                 _robot.HeadDirection = movements[i].Item1;
@@ -53,28 +55,28 @@ namespace RobotCleaner
                     {
                         return false;
                     }
-                    _robot.YCoordinate +=1;
+                    _robot.YCoordinate += 1;
                     break;
                 case "S":
                     if (_robot.YCoordinate == -100000)
                     {
                         return false;
                     }
-                    _robot.YCoordinate -=1;
+                    _robot.YCoordinate -= 1;
                     break;
                 case "W":
                     if (_robot.XCoordinate == -100000)
                     {
                         return false;
                     }
-                    _robot.XCoordinate -=1;
+                    _robot.XCoordinate -= 1;
                     break;
                 case "E":
                     if (_robot.XCoordinate == 100000)
                     {
                         return false;
                     }
-                    _robot.XCoordinate +=1;
+                    _robot.XCoordinate += 1;
                     break;
                 default:
                     throw new NotSupportedException("Invalid Coordinate");
