@@ -38,12 +38,12 @@ namespace RobotCleaner
             for (int i = 0; i < numberofcommands; i++)
             {
                 _robot.HeadDirection = movements[i].Item1;
-                int qnt = 0;
+                int quantity = 0;
                 bool canMove = true;
-                while (qnt < movements[i].Item2 && canMove)
+                while (quantity < movements[i].Item2 && canMove)
                 {
                     canMove = MoveForward();
-                    qnt++;
+                    quantity++;
                 }
             }
         }
@@ -84,7 +84,7 @@ namespace RobotCleaner
                 default:
                     throw new NotSupportedException("Invalid Coordinate");
             }
-            _robot.SpotsCleaned.Add(_robot.XCoordinate + "_" + _robot.YCoordinate);
+            _robot.SpotsCleaned.Add(_robot.XCoordinate + "," + _robot.YCoordinate);
             return true;
         }
     }

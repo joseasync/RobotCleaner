@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace RobotCleaner
+﻿namespace RobotCleaner
 {
     public interface IRobotIA
     {
