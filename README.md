@@ -19,3 +19,14 @@ N 1
 => Cleaned: 4
 
 ![Eg](https://i.imgur.com/Wos1q8w.jpg)
+
+## Author
+Jose Ricardo Cruz\
+Software Engineer, Microsoft MCSA\
+You find me here:
+ - [LinkedIn](https://www.linkedin.com/in/jrgcruz/)
+ - [Twitter](https://twitter.com/josericardodev)
+ - [Instagram](https://www.instagram.com/josecruz.io/)
+
+
+
